@@ -1,0 +1,56 @@
+PS C:\Users\e013103\Desktop\New folder> git init
+Initialized empty Git repository in C:/Users/e013103/Desktop/New folder/.git/
+
+PS C:\Users\e013103\Desktop\New folder> git add file1.py
+PS C:\Users\e013103\Desktop\New folder> git commit -m "first commit"
+[master (root-commit) 120a3f3] first commit
+ Committer: S <Megha.S@team.telstra.com>
+Your name and email address were configured automatically based
+    git config --global user.name "Your Name"
+After doing this, you may fix the identity used for this commit with:
+
+
+ create mode 100644 .vscode/settings.json
+PS C:\Users\e013103\Desktop\New folder> git config --global user.name "Megha1202"
+PS C:\Users\e013103\Desktop\New folder>  git config --global user.email meghaa.s122@gmail.com
+PS C:\Users\e013103\Desktop\New folder> git branch -M main
+>>
+PS C:\Users\e013103\Desktop\New folder> git commit -m "commit this" 
+On branch main
+nothing to commit, working tree clean
+PS C:\Users\e013103\Desktop\New folder> git remote add origin https://github.com/Megha1202/Telstra.git
+PS C:\Users\e013103\Desktop\New folder> git push -u origin main
+>>
+info: please complete authentication in your browser...
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 295 bytes | 147.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Megha1202/Telstra.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+
+------>TO add another file-
+git add file1.py
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Megha1202/Telstra.git
+git push -u origin main
+
+
+------>The code written in vscode in file1 will be updated in the repository if commited the same file again in local-
+Add,Commit,Branch,Push
+
+------>After we edit a file in github,to get it to vs code,the edited version,
+git pull origin main 
+
+-------->git remote -v  -push pull branch
+-------->git branch -shows current branch
+
+
+------->To prevent a set of files from commiting-
+create a file named .gitignore
+write file6
+      file7
+in the file and do add and commit
